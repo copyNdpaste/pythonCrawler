@@ -12,12 +12,13 @@ class JobCrawler(scrapy.Spider):
     start_urls=[]
     dictionary = {}
     def start_requests(self):
-        #for i in range(1, 2):
-        yield scrapy.Request(
-            'http://www.jobkorea.co.kr/Starter/?JoinPossible_Stat=0&schPart=%2C10016%2C&schOrderBy=0&LinkGubun=0&LinkNo=0&schType=0&schGid=0&Page=1',
-            self.parse_jobkorea)
-            #yield scrapy.Request('http://www.jobkorea.co.kr/Starter/?JoinPossible_Stat=0&schPart=%2C10016%2C&schOrderBy=0&LinkGubun=0&LinkNo=0&schType=0&schGid=0&Page=%d' % i, self.parse_jobkorea)
-            #yield scrapy.Request('http://www.saramin.co.kr/zf_user/jobs/public/list/page/%d?up_cd%5B0%5D=3&sort=ud&listType=public&public_list_flag=y&up_cd_list%5B0%5D%5B0%5D=301&up_cd_list%5B0%5D%5B1%5D=302&up_cd_list%5B0%5D%5B2%5D=303&up_cd_list%5B0%5D%5B3%5D=304&up_cd_list%5B0%5D%5B4%5D=305&up_cd_list%5B0%5D%5B5%5D=306&up_cd_list%5B0%5D%5B6%5D=307&up_cd_list%5B0%5D%5B7%5D=308&up_cd_list%5B0%5D%5B8%5D=309&page=%d#searchTitle' % i % i, self.parse_saramin)
+        for i in range(1, 10):
+            yield scrapy.Request(
+                'http://www.jobkorea.co.kr/Starter/?JoinPossible_Stat=0&schPart=%2C10016%2C&schOrderBy=0&LinkGubun=0&LinkNo=0&schType=0&schGid=0&Page=' + str(i),
+                self.parse_jobkorea)
+            yield scrapy.Request(
+                'http://www.saramin.co.kr/zf_user/jobs/public/list/page/' + str(i) + '?up_cd%5B0%5D=3&sort=ud&listType=public&public_list_flag=y&up_cd_list%5B0%5D%5B0%5D=301&up_cd_list%5B0%5D%5B1%5D=302&up_cd_list%5B0%5D%5B2%5D=303&up_cd_list%5B0%5D%5B3%5D=304&up_cd_list%5B0%5D%5B4%5D=305&up_cd_list%5B0%5D%5B5%5D=306&up_cd_list%5B0%5D%5B6%5D=307&up_cd_list%5B0%5D%5B7%5D=308&up_cd_list%5B0%5D%5B8%5D=309&page=' + str(i) + '#searchTitle',
+                self.parse_saramin)
     def parse_jobkorea(self, response):  # 페이지의 기업 홈페이지 주소를 스크래핑함
         self.log('I just visited: ' + response.url)
         infos = response.xpath('//*[@id="devStarterForm"]/div[2]/ul//li')
@@ -62,4 +63,4 @@ class JobCrawler(scrapy.Spider):
             for key in item:
                 self.dictionary[key] = item.get(key)
             self.collection.insert(self.dictionary, manipulate=False)
-            yield item  # yield는 데이터가 쌓이도록 해줌'''
+            yield item  # yield는 데이터가 쌓이도록 해줌
