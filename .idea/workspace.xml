@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b78a33f6-3b97-4390-a385-c31c8c142829" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../pythonCrawler/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonCrawler/pythonCrawler/spiders/page_spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonCrawler/pythonCrawler/spiders/trace_job_pages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonCrawler/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonCrawler/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonCrawler/spiders/job.json" beforeDir="false" afterPath="$PROJECT_DIR$/pythonCrawler/spiders/job.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonCrawler/spiders/page_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonCrawler/spiders/page_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonCrawler/spiders/trace_job_pages.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,18 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pythonCrawler/spiders/trace_job_pages.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#24#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pythonCrawler/__init__.py">
           <provider selected="true" editor-type-id="text-editor" />
@@ -40,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pythonCrawler/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="342">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -58,7 +47,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pythonCrawler/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="342">
               <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
               <folding>
                 <element signature="e#193#232#0" expanded="true" />
@@ -70,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pythonCrawler/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+            <state relative-caret-position="-11">
+              <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -88,11 +77,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pythonCrawler/spiders/page_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+            <state relative-caret-position="95">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pythonCrawler/spiders/job.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -112,6 +110,10 @@
       <find>pipeline</find>
       <find>middlewa</find>
       <find>Request</find>
+      <find>dictionary</find>
+      <find>start_urls</find>
+      <find>pageLinks</find>
+      <find>PageLinks</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,10 +122,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pythonCrawler/spiders/trace_job_pages.py" />
-        <option value="$PROJECT_DIR$/pythonCrawler/items.py" />
         <option value="$PROJECT_DIR$/pythonCrawler/pipelines.py" />
         <option value="$PROJECT_DIR$/pythonCrawler/settings.py" />
+        <option value="$PROJECT_DIR$/pythonCrawler/items.py" />
+        <option value="$PROJECT_DIR$/pythonCrawler/spiders/trace_job_pages.py" />
         <option value="$PROJECT_DIR$/pythonCrawler/spiders/page_spider.py" />
       </list>
     </option>
@@ -140,7 +142,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pythonCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonCrawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="pythonCrawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="pythonCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -203,6 +226,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-136" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -224,26 +248,10 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pythonCrawler/spiders/trace_job_pages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonCrawler/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonCrawler/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pythonCrawler/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="342">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -256,7 +264,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pythonCrawler/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="342">
           <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding>
             <element signature="e#193#232#0" expanded="true" />
@@ -266,8 +274,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pythonCrawler/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+        <state relative-caret-position="-11">
+          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -278,10 +286,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pythonCrawler/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonCrawler/spiders/trace_job_pages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonCrawler/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonCrawler/spiders/job.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pythonCrawler/spiders/page_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        <state relative-caret-position="95">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>

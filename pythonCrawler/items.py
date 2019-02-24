@@ -17,7 +17,4 @@ class PythoncrawlerItem(scrapy.Item):
     homepage = scrapy.Field()
     achievement = scrapy.Field()
     area = scrapy.Field()
-    # author_name = scrapy.Field()
-    # text = scrapy.Field()
-    # tags = scrapy.Field()
     pass
